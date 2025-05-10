@@ -12,9 +12,9 @@ app.use(cors());
 
 const db = mysql.createConnection({
     host: 'sql12.freesqldatabase.com', // Replace with your remote database host
-    user: 'sql12775334',              // Replace with your database username
-    password: 'mLQi5BLQ9Y',           // Replace with your database password
-    database: 'sql12775334'           // Replace with your database name
+    user: 'sql5777971',              // Replace with your database username
+    password: 'hr3vnMkw5s',           // Replace with your database password
+    database: 'sql5777971'           // Replace with your database name
 });
 
 db.connect((err) => {
@@ -36,7 +36,7 @@ app.post('/login', (req, res) => {
 
     // Determine the table and columns based on the login type
     if (type === 'student' || type === 'parent') {
-        tableName = 'Students';
+        tableName = 'students';
         nameColumn = 'studentname';
         codeColumn = 'studentcode';
     } else if (type === 'staff') {
