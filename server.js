@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const db = mysql.createConnection({
-    host: 'sql12.freesqldatabase.com', // Replace with your remote database host
+    host: 'sql5.freesqldatabase.com', // Replace with your remote database host
     user: 'sql5777971',              // Replace with your database username
     password: 'hr3vnMkw5s',           // Replace with your database password
     database: 'sql5777971'           // Replace with your database name
